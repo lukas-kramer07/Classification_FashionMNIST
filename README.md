@@ -87,70 +87,44 @@ The Fashion Model repository provides different versions of fashion classificati
 
 # Evaluation
 
-### Fashion Model
+## Fashion Model Evaluation Scripts
 
-This repository contains different versions of a fashion classification model implemented using TensorFlow. Each version has a different architecture and training configuration. The models are trained on the Fashion MNIST dataset, and their performance can be evaluated by running the provided scripts.
+This section provides documentation for the evaluation scripts included in the Fashion Model repository. These scripts are designed to evaluate the performance of the trained fashion classification models, demonstrate different features, and make predictions on your own pictures. Below you will find details on each script and how to use them.
 
-## Scripts
+### Classification.py
 
-### 1. train.py
+This script is used to evaluate the performance of the trained fashion classification models on the Fashion MNIST test dataset. It loads the saved model weights and evaluates the accuracy of the model on the test data. The script provides a command-line interface to specify the model version to evaluate.
 
-This script is used to train the fashion classification model on the Fashion MNIST dataset. It loads the training and validation data, constructs the model architecture, and trains the model using the specified configuration. After training, the script saves the trained model weights to the specified output directory.
+**Arguments:**
+- `--version`: Specifies the model version to evaluate (e.g., "v1", "v2", etc.)
+- `--image_folder_path`: Specifies the path to the folder containing the test images.
 
-#### Usage:
+### Demonstration_DataAugmenter.py
 
-```python
-!python train.py --data_dir <data_directory> --output_dir <output_directory> --version <model_version>
-```
+This script demonstrates the data augmentation capabilities of the trained fashion classification models. It generates augmented images by applying various transformations to the original images from the Fashion MNIST dataset. The script saves the augmented images to a specified directory for visual inspection.
 
-#### Arguments:
-- `--data_dir`: The directory containing the Fashion MNIST dataset. The dataset should be stored in the format expected by the script.
-- `--output_dir`: The directory where the trained model weights will be saved.
-- `--version`: The version of the model architecture to use for training. Available versions: `v1`, `v2`, `v3`.
 
-### 2. evaluate.py
+### Demonstration_random_picture_pred.py
 
-This script is used to evaluate the performance of the trained fashion classification model on the test set of the Fashion MNIST dataset. It loads the test data and the trained model weights, constructs the model architecture, and calculates the accuracy of the model on the test data.
+This script allows you to make predictions on your own pictures using the trained fashion classification models. It takes an input image and applies pre-processing steps to make it compatible with the model's input requirements. The script then loads the saved model weights and predicts the class label for the input image.
 
-#### Usage:
+**Arguments:**
+- `--version`: Specifies the model version to evaluate (e.g., "v1", "v2", etc.)
+- `--image_folder_path`: Specifies the path to the folder containing the input images for prediction.
 
-```python
-!python evaluate.py --data_dir <data_directory> --version <model_version>
-```
+### Right_Wrong.py
 
-#### Arguments:
-- `--data_dir`: The directory containing the Fashion MNIST dataset. The dataset should be stored in the format expected by the script.
-- `--version`: The version of the model architecture to use for evaluation. Available versions: `v1`, `v2`, `v3`.
+This script is used to evaluate the model's predictions on the test dataset and generate a report indicating the correctly and wrongly classified images. It loads the saved model weights, performs predictions on the test data, and generates an HTML report that displays the test images along with their predicted and true labels.
 
-### 3. predict.py
+**Arguments:**
+- `--version`: Specifies the model version to evaluate (e.g., "v1", "v2", etc.)
+- `--image_folder_path`: Specifies the path to the folder containing the test images.
 
-This script is used to make predictions using the trained fashion classification model on user-provided images. It loads the trained model weights, constructs the model architecture, and makes predictions on the provided images. The predicted class labels and probabilities are displayed.
-
-#### Usage:
-
-```python
-!python predict.py --model <model_version> --image_file <image_file>
-```
-
-#### Arguments:
-- `--model`: The version of the model architecture to use for prediction. Available versions: `v1`, `v2`, `v3`.
-- `--image_file`: The file path to the input image for prediction.
-
-### 4. visualize.py
-
-This script is used to visualize the predictions made by the trained fashion classification model on user-provided images. It loads the trained model weights, constructs the model architecture, makes predictions on the provided images, and displays the images along with their predicted class labels and probabilities.
-
-#### Usage:
-
-```python
-!python visualize.py --model <model_version> --image_file <image_file>
-```
-
-#### Arguments:
-- `--model`: The version of the model architecture to use for visualization. Available versions: `v1`, `v2`, `v3`.
-- `--image_file`: The file path to the input image for visualization.
+**Note:** Please make sure to modify the script arguments and usage as necessary depending on your specific environment, such as Google Colab.
 
 ---
+
+Please refer to the repository's Readme file for detailed instructions on how to set up and use these scripts to evaluate the fashion classification models and explore their features.
 ## Conclusion
 
 In this evaluation section, we have explored different aspects of the fashion classification models implemented in this repository. We started by training the models using the Fashion MNIST dataset and evaluated their performance on the test set. We then demonstrated how to use the trained models to make predictions on user-provided images and visualize the results. Through this evaluation, we have seen the effectiveness of the models in accurately classifying fashion items. The evaluation scripts provided in this repository enable easy training, evaluation, prediction, and visualization of the models. jects.
