@@ -2,6 +2,9 @@
 
 This repository contains several versions of a fashion classification model implemented using TensorFlow. Each version is represented by a separate script: V1.py, V2.py, V3.py, and V4.py.
 
+
+#Models
+
 ## Dataset
 The models are trained on the Fashion MNIST dataset, which consists of 60,000 grayscale images of 10 different clothing items. The dataset is already split into training and test sets.
 
@@ -82,7 +85,7 @@ The models are trained on the Fashion MNIST dataset, which consists of 60,000 gr
 The Fashion Model repository provides different versions of fashion classification models implemented using TensorFlow. Each version has a different architecture and training configuration. By following the setup instructions and running the provided scripts, you can train the models on the Fashion MNIST dataset and evaluate their performance. Feel free to experiment with different versions and configurations to improve the model's accuracy and explore different architectural choices.
 
 
-## Evaluation
+# Evaluation
 
 ### Fashion Model
 
