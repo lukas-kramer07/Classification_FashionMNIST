@@ -76,6 +76,9 @@ The models are trained on the Fashion MNIST dataset, which consists of 60,000 gr
   - Metrics: accuracy
 - Regularization:
   - Dropout regularization applied to the hidden layers with a rate of 0.3
+    
+## Pretrained models
+Pretrained models with configs from V1.py to V4.py are included in the repository and can be used.
 
 ## Conclusion - Models
 The Fashion Model repository provides different versions of fashion classification models implemented using TensorFlow. Each version has a different architecture and training configuration. By following the setup instructions and running the provided scripts, you can train the models on the Fashion MNIST dataset and evaluate their performance. Feel free to experiment with different versions and configurations to improve the model's accuracy and explore different architectural choices.
