@@ -12,20 +12,16 @@ The models are trained on the Fashion MNIST dataset, which consists of 60,000 gr
 
 1. Create an image folder:
    - Create a folder named "images" in the same directory as the script files.
-   - Download the Fashion MNIST dataset and extract the contents.
-   - Move the extracted train-images-idx3-ubyte and t10k-images-idx3-ubyte files to the "images" folder.
 
 2. Training the models:
-   - Open Google Colab and create a new notebook.
-   - Copy the code from the desired version (V1.py, V2.py, V3.py, or V4.py) into separate cells in the notebook.
-   - Run each cell in order to train the model.
+   - Either: Open Google Colab and run each cell in order to train the model.
+   - Or: Run the scripts on your machine using a terminal.
 
 3. Saving the models:
    - After training, the models will be saved in the current directory with the names "Fashion_modelV1", "Fashion_modelV2", "Fashion_modelV3", and "Fashion_modelV4" for V1.py, V2.py, V3.py, and V4.py, respectively.
 
 4. Displaying results:
    - Each script includes a function to create a confusion matrix and display the results.
-   - After training, run the corresponding cell in the notebook to visualize the confusion matrix and plot the training history.
 
 ## Version Details
 
@@ -123,8 +119,6 @@ This script is used to evaluate the model's predictions on the test dataset and 
 **Note:** Please make sure to modify the script arguments and usage as necessary depending on your specific environment, such as Google Colab.
 
 ---
-
-Please refer to the repository's Readme file for detailed instructions on how to set up and use these scripts to evaluate the fashion classification models and explore their features.
 ## Conclusion
 
 In this evaluation section, we have explored different aspects of the fashion classification models implemented in this repository. We started by training the models using the Fashion MNIST dataset and evaluated their performance on the test set. We then demonstrated how to use the trained models to make predictions on user-provided images and visualize the results. Through this evaluation, we have seen the effectiveness of the models in accurately classifying fashion items. The evaluation scripts provided in this repository enable easy training, evaluation, prediction, and visualization of the models. jects.
